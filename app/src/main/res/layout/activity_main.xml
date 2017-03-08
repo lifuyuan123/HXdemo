@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg" >
+    <RadioGroup
+        android:id="@+id/main_bottom"
+        android:background="@color/bottom_bar_normal_bg"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+        <RadioButton
+            android:id="@+id/btn_conversation"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="会话"
+            android:textColor="@color/btn_white_pressed"
+            android:drawableTop="@drawable/em_tab_chat_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <RadioButton
+            android:id="@+id/btn_address_list"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="通讯录"
+            android:textColor="@color/btn_white_pressed"
+            android:drawableTop="@drawable/em_tab_contact_list_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/btn_setting"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/btn_white_pressed"
+            android:drawableTop="@drawable/em_tab_setting_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom" />
+</RelativeLayout>

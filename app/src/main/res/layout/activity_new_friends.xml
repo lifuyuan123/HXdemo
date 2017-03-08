@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_new_friends"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@color/top_bar_normal_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="11dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ease_mm_title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:layout_centerInParent="true"
+            android:text="申请与通知"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textColor="@color/btn_white_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:descendantFocusability="afterDescendants"
+        android:divider="#D4D4D4"
+        android:dividerHeight="1px"
+        android:cacheColorHint="#00000000"
+        android:fastScrollEnabled="true" />
+
+</LinearLayout>

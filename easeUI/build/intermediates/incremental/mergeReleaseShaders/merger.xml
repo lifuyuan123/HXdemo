@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\android demo2\easemob-sdk-3.2.3\examples\EaseUiDemo\easeUI\src\main\shaders"/></dataSet><dataSet config="release"><source path="F:\android demo2\easemob-sdk-3.2.3\examples\EaseUiDemo\easeUI\src\release\shaders"/></dataSet></merger>
